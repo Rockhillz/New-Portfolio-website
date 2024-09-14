@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    background-color: black;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 5px;
+    /* border: 1px solid; */
+}
+
+#header-brand {
+    padding-left: 100px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #BE564A;
+}
+
+#header-brand a {
+    text-decoration: none;
+    color: #BE564A;
+}
+
+.nav-link {
+    display: inline-block !important;
+    padding-right: 20px !important;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-link a:hover {
+    color: #BE564A;
+    text-decoration: underline;
+}
+
+#nav {
+    padding-right: 150px;
+}
+
+/* Body styling */
+#main {
+    display: flex;
+    margin-top: 70px;
+}
+
+#imgcon {
+    padding-left: 200px;
+}
+
+#tex-set {
+    margin-left: 100px;
+    padding: 50px;
+}
+
+.h2text {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.h2text-span {
+    color: #BE564A;
+}
+
+.h3text {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.h3text-span {
+    color: #BE564A;
+}
+
+.ptext {
+    font-size: 20px;
+    width: 550px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.iconset {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.iconset-s {
+    justify-content: space-between;
+    padding-right: 15px;
+    color: #BE564A;
+}
+
+.iconset-s:hover {
+    color: white;
+}
+
+.btn {
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid #BE564A;
+    color: #BE564A;
+    background-color: black;
+    padding: 15px;
+}
+
+.btn-main {
+    font-weight: 700 !important;
+    background-color: white !important;
+}
+.btn-main:hover {
+    color: white !important;
+    background-color: #BE564A !important;
+    border: #BE564A solid !important;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+/* Services design  */
+#services {
+    color: white;
+    padding: 10px;
+}
+
+#service-header {
+    margin-bottom: 30px;
+}
+
+#service-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.service-list {
+    background: #262626;
+    padding:40px;
+    font-size:13px;
+    font-weight: 300;
+    border-radius: 15px;
+}
+
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.service-list h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.service-list p {
+    font-weight: 400;
+}
+
+.service-list:hover {
+    background: linear-gradient(90deg, #BE564A 70%, white); 
+    transform: translateY(-10px);
+}
+
+#works {
+    color: white;
+    padding: 10px;
+}
+
+#work-header {
+    margin-bottom: 30px;
+}
+
+
+/* REsponsiveness */
+@media only screen and (max-width: 600px) {
+    #header-nav {
+        flex-direction: column;
+        margin: 15px;
+        border: 1px solid white;
+    }
+
+    /* .nav-link {
+        display: inline-block;
+        in
+    }
+
+    .nav-link a {
+        flex-direction: row-reverse;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    } */
+
+    #main {
+        flex-direction: column;
+    }
+
+    #imgcon {
+        padding-left: 20px;
+    }
+    
+    #tex-set {
+        padding: 0px;
+    }
+}
